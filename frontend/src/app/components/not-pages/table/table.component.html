@@ -3,7 +3,19 @@
 
         <!-- SEARCHBAR AND FİLTER -->
       <div class="col-12 col-md-6 d-flex align-items-center" style="padding: 15px;">
-        <app-search (searchTermChange)="onSearch($event)"></app-search>
+          <div class="input-group rounded-5 search-bar" >
+            <input #s 
+                type="text" 
+                placeholder="Search objects..." 
+                (keyup.enter)="searchFunction(s.value)" 
+                [value]="searchTerm" 
+                class="searchInput"
+            >
+            <button class="btn btn-search" type="button" (click)="searchFunction(s.value)">
+              <i class="bi bi-search"></i>
+            </button>
+        </div>
+
         <button class="btn btn-filter">
             <i class="bi bi-funnel-fill"></i>
         </button>
@@ -17,7 +29,7 @@
         </button>
       </div>
       
-      <!-- TABLO -->
+      <!-- NOT FOUND PAGE -->
       <app-not-found 
         [visible]="visible"
         notFoundMessage="Aradığınız isim bulunamadı..."
@@ -25,6 +37,7 @@
       >
       </app-not-found>
 
+      <!-- TABLO -->
       <div class="col-12 col-md-12" style="padding: 15px;" *ngIf="!visible">
         <div class="table-container"> 
             <div class="table-responsive">

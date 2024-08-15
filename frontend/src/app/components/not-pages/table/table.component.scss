@@ -43,4 +43,33 @@ td{
 
   
 
+  .search-bar .form-control {
+    border: none;
+    background-color: transparent;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+    
+.search-bar .btn-search {
+    background-color: #744BFC;
+    color: white;
+    border: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+      
 
+
+.search-bar {
+    background-color: white;
+}
+
+.searchInput{
+    padding: 13px; 
+    border: 0px; 
+    border-radius: 150px;
+}
+
+.input-group{
+    flex-wrap:nowrap;
+}

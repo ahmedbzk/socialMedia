@@ -1,0 +1,25 @@
+/* Genel padding tanımı - geniş ekranlar için */
+.container-fluid {
+    padding-left: 50px;
+    padding-right: 150px;
+}
+
+/* Mobil ekranlar için - 768px ve altı */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 50px;
+    }
+}
+
+.imgHeight{
+    height: 40px;
+}
+
+.iconMarginRight{
+    margin-right: 10px;
+}
+
+.iconBadgeColor{
+    background-color: #744BFC;
+}

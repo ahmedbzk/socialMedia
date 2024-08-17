@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Social } from '../shared/models/socialModel';
-import { social_datas } from '../../data';
+import { User } from '../shared/models/userModel';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { SOCIAL_URL } from '../shared/constants/urls';
+import { SOCIAL_URL, USERLOGIN_URL } from '../shared/constants/urls';
 
 @Injectable({
   providedIn: 'root'
@@ -31,5 +31,10 @@ export class SocialService {
   // Sosyal medya datalarını silmek için servis
   deleteSocialLink(socialLinkDatas:Social):Observable<any>{
     return this.http.delete(SOCIAL_URL + '/'+ socialLinkDatas.id);
+  }
+
+  // Login girişi
+  userLogin(userData:User):Observable<any>{
+    return this.http.post(USERLOGIN_URL,userData);
   }
 }

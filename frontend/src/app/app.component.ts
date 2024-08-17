@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./components/not-pages/header/header.component";
 
@@ -9,6 +9,13 @@ import { HeaderComponent } from "./components/not-pages/header/header.component"
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
+
   title = 'RastMobileSocialApp';
+
+  ngOnInit() {
+    
+  }
+
+ 
 }

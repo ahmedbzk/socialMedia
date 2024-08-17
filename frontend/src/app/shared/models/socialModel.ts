@@ -4,3 +4,4 @@ export class Social{
     name!:string;
     description!:string;
 }
+

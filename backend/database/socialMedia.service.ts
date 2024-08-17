@@ -45,7 +45,6 @@ export class SocialMediaService{
             ];
         }
 
-
         DbConnection.db.execute(query, bind, (err, results) => {
             if (err) {
                 console.error('Sorgu çalıştırılırken hata oluştu:', err);
@@ -75,4 +74,6 @@ export class SocialMediaService{
             response.send({result: true})
         });
     }
+
+
 }

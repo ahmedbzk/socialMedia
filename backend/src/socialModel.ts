@@ -1,4 +1,3 @@
-// src/models/Social.ts
 export class Social {
     constructor(
         public id: number | null,

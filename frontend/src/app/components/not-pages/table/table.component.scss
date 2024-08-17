@@ -1,3 +1,47 @@
+.container-fluid{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+/* Mobil ekranlar için - 768px ve altı */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+
+.columnLeft{
+    display: flex;
+    align-items: center;
+}
+
+/* Mobil ekranlar için - 768px ve altı */
+@media (max-width: 768px) {
+    .columnLeft {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+.columnRight{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Mobil ekranlar için - 768px ve altı */
+@media (max-width: 768px) {
+    .columnRight {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 .rounded-table th,
 .rounded-table td {
     padding: 30px; 
@@ -10,16 +54,25 @@ th{
 
 td{
     border-style: inherit;
+    word-break: break-word;
 }
 
 .table-container{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+    border-radius: 20px;
+}
 
+.table-responsive{
+    border-radius: 20px;
 }
 
 .table{
     --bs-table-striped-bg: rgba(255, 255, 255, 0.7); 
     --bs-table-bg: transparent;
+}
+
+.table-bordered>:not(caption)>*{
+    border-width: 0;
 }
 
 .btn-filter {
@@ -57,11 +110,9 @@ td{
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
 }
-      
-
 
 .search-bar {
-    background-color: white;
+    width: auto;
 }
 
 .searchInput{
@@ -72,4 +123,93 @@ td{
 
 .input-group{
     flex-wrap:nowrap;
+}
+
+
+
+
+
+
+// MODAL SCSS
+
+.modalEditButton{
+    color: white;
+    padding: 5px 10px 5px 10px;
+    background-color: #744BFC;
+    border-radius: 10px;
+}
+
+
+
+.modal-header{
+    border-bottom: none;
+}
+
+.modal-body{
+    padding: 40px;
+}
+
+.modal-footer{
+    border-top: none;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.modal-content{
+    border-radius: 20px;
+}
+
+.form-label{
+    margin-bottom: 0.2rem;
+}
+
+.modal-text{
+    color: #06163A;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.modal-input{
+    border-radius: 30px;
+    padding: 12px;
+}
+
+.modal-exit-button{
+    background-color: #F5F7FF; 
+    color: #744BFC;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 8px 20px 8px 20px;
+    margin-right: 20px;
+}
+
+.modal-create-button{
+    background-color: #744BFC; 
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 8px 20px 8px 20px;
+    margin-right: 0px;
+}
+
+.modal-save-button{
+    background-color: #cdda20; 
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 8px 20px 8px 20px;
+    margin-right: 0px;
+}
+
+.modal-delete-button{
+    background-color: #e41a1a; 
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 8px 20px 8px 20px;
+    margin-right: 0px;
 }

@@ -1,14 +1,14 @@
 /* Genel padding tanımı - geniş ekranlar için */
 .container-fluid {
-    padding-left: 50px;
-    padding-right: 150px;
+    padding-left: 90px;
 }
 
 /* Mobil ekranlar için - 768px ve altı */
 @media (max-width: 768px) {
     .container-fluid {
-        padding-left: 0;
-        padding-right: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top:20px
     }
 }
 
@@ -22,4 +22,25 @@
 
 .iconBadgeColor{
     background-color: #744BFC;
+}
+
+.ulLogout{
+    margin-left: 15px;
+}
+/* Mobil ekranlar için - 768px ve altı */
+@media (max-width: 768px) {
+    .ulLogout {
+        margin-left: 0px;
+    }
+}
+
+.logOutButton{
+    border-radius: 50px;
+}
+
+/* Mobil ekranlar için - 768px ve altı */
+@media (max-width: 768px) {
+    .logOutButton {
+        margin-top: 10px;
+    }
 }

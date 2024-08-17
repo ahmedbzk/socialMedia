@@ -1,12 +1,13 @@
 import { Routes } from '@angular/router';
 import { HomepageComponent } from './components/pages/homepage/homepage.component';
 import { LoginComponent } from './components/pages/login/login.component';
-import { HeaderComponent } from './components/not-pages/header/header.component';
+import { authGuard, loginGuard } from './services/auth-guard'
 
 export const routes: Routes = [
-    { path: '', redirectTo: 'homepage', pathMatch: 'full' },
-    { path: 'homepage', component: HomepageComponent },
-    { path: 'login', component: LoginComponent },
-    { path: 'header', component: HeaderComponent }
+    { path: '', redirectTo: 'login', pathMatch: 'full' },
+    { path: 'homepage', component: HomepageComponent,canActivate: [authGuard] },
+    { path: 'login', component: LoginComponent,canActivate: [loginGuard]},
+    { path: 'header', component: LoginComponent,canActivate: [authGuard]}
+
 
   ];

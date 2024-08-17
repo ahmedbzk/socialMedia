@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-header',
@@ -9,4 +11,13 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  constructor(private router: Router,private toastrService:ToastrService){}
+
+  logOutClick(){
+    localStorage.setItem('login','false');
+    this.toastrService.info('Basarıyla cıkıs yaptınız. Giris sayfasına yonlendiriliyorsunuz...','Basarılı!')
+    setTimeout(() => {
+      this.router.navigate(['/login']); 
+    }, 1000);
+  }
 }

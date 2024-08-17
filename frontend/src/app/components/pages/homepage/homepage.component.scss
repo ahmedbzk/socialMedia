@@ -1,0 +1,19 @@
+.container-fluid{
+    padding: 50px;
+}
+@media (max-width: 768px) {
+.container-fluid {
+    padding: 0px;
+}
+}
+
+/* Büyük ekranlar için padding  */
+.content-container {
+    padding-right: 20px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-top: 25px;
+    border-radius: 20px;
+    background-image: linear-gradient(360deg, #EFF2FF, #E8ECFF);
+}
+

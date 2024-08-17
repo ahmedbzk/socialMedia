@@ -1,4 +1,6 @@
 const BASE_URL='http://localhost:5000';
 
-// Gerekli servis bağlantılarımız için ilk api url'lerimizi hazırlıyorum.
+// api url'esi
 export const SOCIAL_URL = BASE_URL + '/api/socials';
+export const USERLOGIN_URL = BASE_URL + '/api/users/login';
+

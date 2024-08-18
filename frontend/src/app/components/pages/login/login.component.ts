@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
             data => {
                 if (data.result === true) {
                     localStorage.setItem('login', 'true');
-                    this.toastrService.success('Başarılı giriş. Anasayfaya Yönlendiriliyorsunuz...', 'Başarılı');
+                    this.toastrService.success('Basarılı giris. Anasayfaya Yönlendiriliyorsunuz...', 'Basarılı');
                     this.visible = true;
                     setTimeout(() => {
                         this.router.navigate(['/homepage']);
@@ -43,7 +43,7 @@ export class LoginComponent implements OnInit {
                 } 
             },
             error => {
-                this.toastrService.error('Lütfen doğru kullanıcı adı ve şifreyle giriş yapınız...', 'Basarısız giriş');
+                this.toastrService.error('Lutfen dogru kullanıcı adı ve sifreyle giris yapınız...', 'Basarısız giris');
                 localStorage.setItem('login', 'false');
             }
         );

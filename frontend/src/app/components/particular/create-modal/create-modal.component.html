@@ -1,0 +1,29 @@
+<div class="modal fade modal-lg" id="createModal" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="createMediaForm" (ngSubmit)="createModalSubmit()">
+          <div class="mb-4 mt-2">
+            <label for="link" class="form-label modal-text">Sosyal Medya Linki</label>
+            <input type="text" class="form-control modal-input" formControlName="link" validateLink>
+          </div>
+          <div class="mb-4">
+            <label for="name" class="form-label modal-text">Sosyal Medya Adı</label>
+            <input type="text" class="form-control modal-input" formControlName="name">
+          </div>
+          <div class="mb-4">
+            <label for="description" class="form-label modal-text">Açıklama</label>
+            <input type="text" class="form-control modal-input" formControlName="description">
+          </div>
+          <div class="modal-footer mt-5">
+            <button type="button" class="btn modal-exit-button" data-bs-dismiss="modal" (click)="createModalDismiss()">Vazgeç</button>
+            <button type="submit" [disabled]="createMediaForm.invalid" class="btn modal-create-button">Kaydet</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

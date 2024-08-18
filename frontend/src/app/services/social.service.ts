@@ -30,7 +30,7 @@ export class SocialService {
 
   // Sosyal medya datalarını silmek için servis
   deleteSocialLink(socialLinkDatas:Social):Observable<any>{
-    return this.http.delete(SOCIAL_URL + '/'+ socialLinkDatas.id);
+    return this.http.delete(SOCIAL_URL + '/'+ socialLinkDatas);
   }
 
   // Login girişi

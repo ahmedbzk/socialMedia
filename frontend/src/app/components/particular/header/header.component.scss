@@ -1,9 +1,7 @@
-/* Genel padding tanımı - geniş ekranlar için */
 .container-fluid {
     padding-left: 90px;
 }
 
-/* Mobil ekranlar için - 768px ve altı */
 @media (max-width: 768px) {
     .container-fluid {
         padding-left: 20px;
@@ -27,7 +25,6 @@
 .ulLogout{
     margin-left: 15px;
 }
-/* Mobil ekranlar için - 768px ve altı */
 @media (max-width: 768px) {
     .ulLogout {
         margin-left: 0px;
@@ -35,10 +32,9 @@
 }
 
 .logOutButton{
-    border-radius: 50px;
+    border-radius: 10px;
 }
 
-/* Mobil ekranlar için - 768px ve altı */
 @media (max-width: 768px) {
     .logOutButton {
         margin-top: 10px;

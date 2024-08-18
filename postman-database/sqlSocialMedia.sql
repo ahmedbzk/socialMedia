@@ -26,12 +26,15 @@ CREATE TABLE IF NOT EXISTS `social_links` (
   `link` text DEFAULT NULL,
   `description` text DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- social_media.social_links: ~2 rows (yaklaşık) tablosu için veriler indiriliyor
+-- social_media.social_links: ~5 rows (yaklaşık) tablosu için veriler indiriliyor
 INSERT INTO `social_links` (`id`, `name`, `link`, `description`) VALUES
-	(19, 'denemead', 'denemelink', 'denemeaciklama1232'),
-	(25, 'deneme', 'https://deneme.com', 'deneme');
+	(25, 'deneme', 'https://deneme.com', 'deneme231'),
+	(26, 'twitter', 'https://twitter.com', 'twitterDesc'),
+	(27, 'github', 'https://github.com', 'YazılımDesc'),
+	(34, 'chatgpt', 'https://chatgpt.com/', 'ChatgptDesc'),
+	(35, 'instagram', 'https://instagram.com/', 'InstagramDesc');
 
 -- tablo yapısı dökülüyor social_media.users
 CREATE TABLE IF NOT EXISTS `users` (
@@ -39,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `password` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- social_media.users: ~1 rows (yaklaşık) tablosu için veriler indiriliyor
+-- social_media.users: ~0 rows (yaklaşık) tablosu için veriler indiriliyor
 INSERT INTO `users` (`username`, `password`) VALUES
 	('admin', 'admin');
 

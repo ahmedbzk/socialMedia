@@ -1,0 +1,42 @@
+.show-text{
+    font-weight: 500;
+    font-size: 15px;
+    color: #744BFC;
+    margin-right: 10px;
+}
+.dropdown-toggle{
+    background: white;
+    color: black;
+    border-color: #CFC0FF;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.buttonScss{
+    background: transparent;
+    color: #C9C9C9;
+    border: none;
+
+    .total-page-right{
+        color: #744BFC;
+        font-size: 1.5em;
+        -webkit-text-stroke: 2px;
+    }
+    .total-page-left{
+        color: #C9C9C9;
+        font-size: 1.5em;
+        -webkit-text-stroke: 2px;
+    }
+}
+
+.total-page-text{
+    color: #744BFC;
+}
+
+.page-input{
+    border-radius: 5px;
+    width: 25%;
+    text-align: center;
+    border:2px solid #EAEAEA;
+}

@@ -1,0 +1,44 @@
+<nav aria-label="Page navigation example">
+    <div class="row">
+        <div class="col-6 col-md-6">
+            <div class="dropdown">
+                    <span class="show-text ">Show:</span>
+                    <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        {{pageRows}} rows
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <button class="dropdown-item" (click)="changePageRows(2)">2 rows</button>
+                        <button class="dropdown-item" (click)="changePageRows(4)">4 rows</button>
+                        <button class="dropdown-item" (click)="changePageRows(10)">10 rows</button>
+                        <button class="dropdown-item" (click)="changePageRows(20)">20 rows</button>
+                        <button class="dropdown-item" (click)="changePageRows(50)">50 rows</button>
+                      </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-6" style="display: flex; justify-content: flex-end;">
+            <div class="pagination-container" style="display: flex; align-items: center;">
+                <button class="buttonScss" (click)="previousPage()" [disabled]="currentPage === 1">
+                    <i class="bi bi-chevron-left total-page-left"></i>
+                </button>
+                
+                <span style="text-align: center;">
+                    <input 
+                        type="number" 
+                        [value]="currentPage" 
+                        (change)="onPageInputChange($event)" 
+                        min="1" 
+                        [max]="totalPages"
+                        class="page-input"
+                    />
+                    <span style="color: #C9C9C9; margin-left: 8px; margin-right: 8px;"> of </span> 
+                    <span class="total-page-text">{{ totalPages }}</span>
+                </span>
+                <button class="buttonScss" (click)="nextPage()" [disabled]="currentPage === totalPages">
+                    <i class="bi bi-chevron-right total-page-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+   
+  </nav>
+  

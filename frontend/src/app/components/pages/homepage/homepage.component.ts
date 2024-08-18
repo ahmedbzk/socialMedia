@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { TableComponent } from '../../not-pages/table/table.component';
-import { CreateModalComponent } from "../../not-pages/create-modal/create-modal.component";
+import { TableComponent } from '../../particular/table/table.component';
+import { CreateModalComponent } from "../../particular/create-modal/create-modal.component";
 import { LoginComponent } from "../login/login.component";
-import { HeaderComponent } from "../../not-pages/header/header.component";
+import { HeaderComponent } from "../../particular/header/header.component";
 
 @Component({
   selector: 'app-homepage',

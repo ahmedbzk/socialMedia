@@ -5,7 +5,7 @@ backend localim: 5000 portu (değiştirmek için "backend>src>server.ts")
 
 1-) Veritabanı (SQL)
 
-Anasayfada direkt bulunan "postman-database" klasöründeki .sql uzantılı dosyayı veritabanınıza ekleyiniz. 
+Sol tarafta direkt bulunan "postman-database" klasöründeki .sql uzantılı dosyayı veritabanınıza ekleyiniz. 
 Postman dosyasını da postmaninize import ederek gerekli servis ve parametrelere ulaşabilirsiniz.
 
 
